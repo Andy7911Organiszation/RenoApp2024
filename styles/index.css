@@ -1,0 +1,150 @@
+:root {
+    --primary-blue-color: #18A0FB;
+    --secondary-yellow-color : #CCA643;
+    --secondary-yellow-darker-color : #FFD05482;
+    --primary-gray-color: #CCCCCC;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html{
+    height: 100%;
+    width: 100%;
+
+    font-family: "Roboto", serif;
+}
+
+body {
+    margin: 0;
+    background-color: var(--primary-blue-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: inherit;
+    width: inherit;
+}
+
+.logging-section-wrapper{
+    width: 90%;
+    background-color: white;
+    height:90%;
+    border: 1px solid #333;
+    border-radius: 2%;
+    
+}
+
+.logging-info {
+    background-color: white;
+    border-radius: inherit;
+}
+
+.logging-info-wrapper {
+    width: 45%;
+}
+
+.logging-info-wrapper  form > * {
+    display: block;
+}
+
+.logging-info .divider-logging span {
+    color: var(--primary-gray-color);
+    
+}
+
+.featured-image-section {
+    background-color: #FFF8E8;
+    border-radius: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.featured-image-section-orange-square {
+    background-color: var(--secondary-yellow-darker-color);
+    height: 57%;
+    width: 80%;
+    border-radius: 5px;
+    position: relative;
+}
+
+.featured-image-section-orange-square img {
+    right: -10%;
+    bottom: 2%;
+    width: 65%;
+    height: 80%;
+    position:  absolute;
+}
+
+.featured-image-section-orange-square h3 {
+    padding: 0 10px;
+    color : white; 
+    width: 55%;
+}
+
+.hr-line {
+    border: 0.5px solid rgb(177, 177, 177);
+    height: 1px;
+    width: 20%;
+}
+
+/* */
+
+.btn {
+    padding: 10px 10px;
+    border-radius: 10px;
+    margin-top: 5px;
+    background-color: transparent;
+    border : 1px solid rgba(41, 41, 41, 0.078);
+}
+
+.btn:hover {
+    border-color: var(--secondary-yellow-color);
+}
+
+.input {
+    margin: 5px 0px;
+    outline: none;
+    padding : 10px 10px;
+    border-radius: 10px;
+    border: 1px solid var(--primary-gray-color);
+    max-height: 80px;
+}
+
+.input:focus, input:hover {
+    border-color: var(--secondary-yellow-color);
+}
+
+img {
+    width: 30px;
+    height: 100%;
+   
+}
+
+.grid {
+    display: grid;
+}
+
+.grid-template-column-2 {
+    grid-template-columns: repeat(2,1fr);
+}
+
+
+.center {
+    margin: 0 auto;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+hr {
+    border: 1px solid var(--primary-gray-color);
+    width: 25%;
+    margin: 0;
+}

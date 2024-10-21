@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+
+    <!-- External stylesheets-->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+    <!--End of external stylesheet-->
+    <!-- Begining of internal stylesheeet-->
+
+    <link rel="stylesheet" href="./styles/index.css" />
+    <link rel="stylesheet" href="./styles/sign-in-with-google.css" />
+  </head>
+  <body>
+    <!-- Wrapper for Logging section-->
+    <div class="logging-section-wrapper grid grid-template-column-2">
+      <!-- Login Info Section-->
+      <!-- Which is a form-->
+      <section class="logging-info">
+        <!-- Top section :(Google or Facebook Login)-->
+        <div class="logging-info-wrapper center">
+          <h3 class="">Login</h3>
+          <h6 class="">Ready to begin</h6>
+
+          <button type="button" class="btn flex-row">
+            
+            <img src="/facebook-round-color-icon.svg" alt="">Sign in with facebook
+          </button>
+
+          <button class="btn btn-google-loggin flex-row" >
+            <img src="/google-logo-transparent-2.png" alt="Photo de google">Sign in with google
+          </button>
+
+
+        </div>
+
+        <!-- Middle section (divider)-->
+         <div class="divider-logging flex-row">
+            <div class="hr-line"></div>
+            <span>or log in with</span>
+            <div class="hr-line"></div>
+         </div>
+
+        <!-- Bottom Section (Email And Password Login)-->
+        <div class="logging-info-wrapper center">
+          <form action="./v1/login">
+            <label for="email">Email</label>
+            <input
+              type="text"
+              name="email"
+              id="email"
+              class="input"
+              placeholder="Please enter your email"
+            />
+            <label for="password">Password</label>
+            <input
+              type="text"
+              name="password"
+              id="password"
+              class="input"
+              placeholder="Please enter your password"
+            />
+          </form>
+        </div>
+      </section>
+      <!-- Featured Image Section-->
+      <section class="featured-image-section">
+
+        <div class="featured-image-section-orange-square">
+          <h3>Find the good service
+            for you</h3>
+
+            <img src="/worker.png" alt="">
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
