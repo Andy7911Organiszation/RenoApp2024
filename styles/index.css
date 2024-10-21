@@ -1,18 +1,8 @@
-:root {
-    --primary-blue-color: #18A0FB;
-    --secondary-yellow-color : #CCA643;
-    --secondary-yellow-darker-color : #FFD05482;
-    --primary-gray-color: #CCCCCC;
-}
-
-* {
-    box-sizing: border-box;
-}
+@import './common-styles.css';
 
 html{
     height: 100%;
     width: 100%;
-
     font-family: "Roboto", serif;
 }
 
