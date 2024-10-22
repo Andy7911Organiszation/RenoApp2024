@@ -20,16 +20,35 @@
     <title>Activity</title>
   </head>
   <body>
-    <section class="navigation-bar-section flex-row container">
+    <!-- Header section -->
+    <section class="navigation-bar-section flex-row container space-between">
       <div class="logo"><img class="img" src="./public/hammer.png" alt=""></div>
       <ul class="navbar flex-row">
         <li>Home</li>
         <li>About Us</li>
         <li>How it works</li>
-        <li> <input class="btn" type="button" value="Sign In" /></li>
-        <li> <input type="button" class="btn" value="Log In" />  </li>
+        <ul class="inner-nav flex-row">
+            <li> <input class="btn" type="button" value="Sign In" /></li>
+            <li> <input type="button" class="btn" value="Log In" />  </li>
+        </ul>
+       
         
       </ul>
     </section>
+
+    <!-- Main Section -->
+     <section class="presentation">
+        <div class="presentation-info">
+            <div class="presentation-info-headers">
+                <h1>Lorem ipsum dolor sit amet consectetur.</h1>
+                <h6>Lorem ipsum dolor sit.</h6>
+            </div>
+            <div class="presentation-info-call-to-action">
+                <input type="button" value="Get Started" class="btn">
+                <input type="button" value="Go explore" class="btn btn-outline">
+            </div>
+        </div>
+        <div class="presentation-image"></div>
+     </section>
   </body>
 </html>
